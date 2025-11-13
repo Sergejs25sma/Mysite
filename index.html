@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNIK & Co SIA | Tehniskie Konsultāciju un IT Atbalsta Pakalpojumi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Arial", sans-serif;
+            color: #fff;
+            background-color: #111;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #00bfff;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .dark-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.55);
+        }
+
+        .hero {
+            background: url('https://plus.unsplash.com/premium_photo-1664699099341-b7c4229a8d97?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687') no-repeat center center/cover;
+            position: relative;
+            color: white;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-family: "Times New Roman", serif;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            line-height: 1.6;
+        }
+
+        .content-block {
+            background-color: #1a1a1a;
+            padding: 80px;
+        }
+
+        .content-block h2 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            color: #00bfff;
+        }
+
+        .content-block p, .content-block li {
+            font-size: 22px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .contacts {
+            background: url('https://plus.unsplash.com/premium_photo-1664699099341-b7c4229a8d97?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687') no-repeat center center/cover;
+            position: relative;
+            color: white;
+        }
+
+        .contacts-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .contacts-text {
+            max-width: 600px;
+            text-align: left;
+            font-size: 22px;
+        }
+
+        .contact-form {
+            background-color: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: left;
+        }
+
+        .contact-form input, .contact-form textarea, .contact-form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            background-color: rgba(255,255,255,0.9);
+        }
+
+        .contact-form button {
+            background-color: #00bfff;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact-form button:hover {
+            background-color: #0099cc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div><strong>JUNIK & Co SIA</strong></div>
+    <nav>
+        <a href="#home">Sākums</a>
+        <a href="#about">Par mums</a>
+        <a href="#services">Pakalpojumi</a>
+        <a href="#contacts">Kontakti</a>
+    </nav>
+</header>
+
+<!-- 1. Hero Section -->
+<section class="hero" id="home">
+    <div class="dark-overlay"></div>
+    <div class="hero-content">
+        <h1><b>JUNIK & Co SIA</b></h1>
+        <p>Mēs piedāvājam tehniskās konsultācijas, IT infrastruktūras risinājumus un programmatūras atbalstu uzņēmumiem, kas tiecas uz efektivitāti un drošību. Mūsu mērķis – radīt stabilus digitālus pamatus jūsu biznesa attīstībai.</p>
+    </div>
+</section>
+
+<!-- 2. About Section -->
+<section class="content-block" id="about">
+    <h2>Kas mēs esam?</h2>
+    <p>JUNIK & Co SIA ir tehnisko konsultāciju un IT atbalsta uzņēmums, kas palīdz organizācijām optimizēt tehnoloģiskos procesus un uzlabot datu drošību. Mēs sadarbojamies ar klientiem no dažādām nozarēm, piedāvājot pielāgotus risinājumus – no sistēmu uzturēšanas līdz digitālajai transformācijai. Mūsu komandu veido pieredzējuši speciālisti, kas apvieno tehnisko kompetenci ar stratēģisku domāšanu. Katrs projekts mums ir iespēja palīdzēt uzņēmumiem strādāt gudrāk, drošāk un ātrāk. Mēs ticam, ka stabils IT pamats ir ilgtspējīgas izaugsmes atslēga.</p>
+</section>
+
+<!-- 3. Services Section -->
+<section class="content-block" id="services">
+    <h2>Mūsu pakalpojumi</h2>
+    <ul>
+        <li><strong>Tehniskās konsultācijas</strong> – analizējam jūsu IT infrastruktūru un piedāvājam efektīvus risinājumus darbības optimizācijai un izmaksu samazināšanai.</li>
+        <li><strong>IT atbalsts un uzturēšana</strong> – nodrošinām pastāvīgu sistēmu darbību, ātru kļūdu novēršanu un lietotāju atbalstu 24/7 režīmā.</li>
+        <li><strong>Programmatūras integrācija</strong> – palīdzam savienot esošās sistēmas ar jaunām tehnoloģijām, nodrošinot vienotu un drošu IT vidi.</li>
+    </ul>
+</section>
+
+<!-- 4. Advantages Section -->
+<section class="content-block" id="advantages">
+    <h2>Kāpēc izvēlēties mūs?</h2>
+    <ul>
+        <li><strong>Individuāla pieeja</strong> – katram klientam izstrādājam risinājumu, kas atbilst konkrētajām biznesa vajadzībām.</li>
+        <li><strong>Tehnoloģiskā kompetence</strong> – mūsu speciālisti seko līdzi jaunākajām IT tendencēm un ievieš tās praksē.</li>
+        <li><strong>Drošība un uzticamība</strong> – mēs aizsargājam jūsu datus un nodrošinām, ka jūsu sistēmas darbojas nepārtraukti un droši.</li>
+    </ul>
+</section>
+
+<!-- 5. Process Section -->
+<section class="content-block" id="process">
+    <h2>Kā mēs strādājam</h2>
+    <ul>
+        <li><strong>1. Analīze</strong> – izpētām jūsu esošās sistēmas un vajadzības, lai izveidotu optimālu risinājuma plānu.</li>
+        <li><strong>2. Izstrāde un ieviešana</strong> – pielāgojam un ieviešam risinājumus, nodrošinot to atbilstību biznesa procesiem.</li>
+        <li><strong>3. Atbalsts un attīstība</strong> – turpinām sadarbību, nodrošinot sistēmu uzturēšanu un regulāru uzlabojumu ieviešanu.</li>
+    </ul>
+</section>
+
+<!-- 6. Contacts Section -->
+<section class="contacts" id="contacts">
+    <div class="dark-overlay"></div>
+    <div class="contacts-content">
+        <div class="contacts-text">
+            <h2>Sazinieties ar mums</h2>
+            <p>Vai vēlaties uzlabot savu IT vidi vai konsultēties par tehniskiem risinājumiem? Rakstiet mums – mēs palīdzēsim atrast labāko pieeju jūsu uzņēmuma vajadzībām.</p>
+            <p><strong>E-pasts:</strong> support@junikco.org<br>
+               <strong>Adrese:</strong> 11 Aiviekstes iela, LV-1019 Rīga</p>
+        </div>
+        <div class="contact-form">
+            <h3>Nosūtiet ziņu</h3>
+            <form>
+                <input type="text" placeholder="Vārds" required>
+                <input type="email" placeholder="E-pasts" required>
+                <textarea rows="5" placeholder="Jūsu ziņa"></textarea>
+                <button type="submit">Nosūtīt</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
